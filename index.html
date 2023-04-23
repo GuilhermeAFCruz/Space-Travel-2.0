@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Travel Website</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imgs/favicon-32x32.png" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+<!---------------- Hero ---------------->
+
+    <div id="hero" class="hero set-background">
+        <!-- Button to help Screen readers and keyboard navigation -->
+        <a href="#main" class="skip-to-content">Skip to content</a>
+        <!-- Header -->
+        <header class="header flex">
+            <!-- Logo -->
+            <div>
+                <img src="imgs/shared/logo.svg" alt="Space Tourism Logo" class="logo">
+            </div>
+            <!-- Nav Toggle -->
+            <button data-nav-toggle class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span> <!-- only for screen readers-->
+                <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="250px">
+                    <rect class="hamburger__line top "
+                        width="80" height="10"
+                        x="10" y="25" rx="5">
+                    </rect>
+                    <rect class="hamburger__line middle"
+                        width="80" height="10"
+                        x="10" y="45" rx="5">
+                    </rect>
+                    <rect class="hamburger__line bottom"
+                        width="80" height="10"
+                        x="10" y="65" rx="5">
+                    </rect>
+                </svg>
+            </button>
+            <!-- Primary Navigation -->
+            <nav>
+                <ul data-navigation id="primary-navigation" data-visible="false" class="primary-navigation flex underline-indicators">
+                    <li class="active">
+                        <a href="index.html" class="ff-sans-cond uppercase letter-spacing-2 txt-white"><span aria-hidden="true">00</span>Home</a>
+                    </li>
+                    <li>
+                        <a href="main.html" data-link="destination" class="ff-sans-cond uppercase letter-spacing-2 txt-white"><span aria-hidden="true">01</span>Destination</a>
+                    </li>
+                    <li>
+                        <a href="main.html" data-link="crew" class="ff-sans-cond uppercase letter-spacing-2 txt-white"><span aria-hidden="true">02</span>Crew</a>
+                    </li>
+                    <li>
+                        <a href="main.html" data-link="technology" class="ff-sans-cond uppercase letter-spacing-2 txt-white"><span aria-hidden="true">03</span>Technology</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="hero-content" class="hero-content grid-container grid-container--hero flow">
+            <div class="hero-text flow">
+                <h1 class="fs-500 ff-sans-cond uppercase letter-spacing-1 txt-accent">So, you want to travel to <span class="fs-900 ff-serif txt-white d-block">Space</span></h1>
+
+                <p>Let's face it; if you want to go to space, you might as well genuinely go to
+                    outer space and not hover kind of on the edge of it. Well sit back, and relax
+                    because we'll give you a truly out of this world experience!</p>
+            </div>
+                <a data-large-button href="main.html" class="large-button bg-white txt-dark ff-serif uppercase">Explore</a>
+        </main>
+    </div>
+
+
+</body>
+</html>
